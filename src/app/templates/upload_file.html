@@ -8,17 +8,6 @@
 <h2>Select file(s) to Upload</h2>
 <div class="row">
 	<div class="col-sm-4">
-		<p>
-		{% with messages = get_flashed_messages() %}
-			{% if messages %}
-				<p class=flashes>
-				{% for message in messages %}
-					{{ message }}
-				{% endfor %}
-				</p>
-			{% endif %}
-		{% endwith %}
-		</p>
 		<form method="post" enctype="multipart/form-data">
 			<dl>
 				<p>
